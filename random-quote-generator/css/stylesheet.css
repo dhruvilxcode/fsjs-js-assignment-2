@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,100;1,300&display=swap');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+}
+
+.q-container {
+    background:  
+                linear-gradient(45deg, #00000088, #00000088),
+                url('https://source.unsplash.com/random/?nature');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#quote {
+    color: #fff;
+    padding: 0 40px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.info {
+    color: #c8c8c8;
+    margin-bottom: 40px;
+    background-color: #d6d6d62c;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
