@@ -10,6 +10,10 @@ Build a Stopwatch app which starts by pressing the button start and stop by stop
 # 2. Countdown App:
 Build a countdown app which takes the start position from the user and on reaching zero,the countdown stops.
 
+![countdown](./countdown-app/countdown-app.gif)
+
+[View Source](./countdown-app/)
+
 # 3. Word Count App:
 Build a word count app which only calculates the number of characters given by the user.
 
