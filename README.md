@@ -3,6 +3,9 @@ JavaScript Project
 # 1. Stopwatch App:
 Build a Stopwatch app which starts by pressing the button start and stop by stop button also there is a reset button.
 
+![stopwatch](./stopwatch-app/stopwatch.gif)
+[View Source](./stopwatch-app/)
+
 # 2. Countdown App:
 Build a countdown app which takes the start position from the user and on reaching zero,the countdown stops.
 
