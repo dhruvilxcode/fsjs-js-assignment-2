@@ -17,6 +17,10 @@ Build a countdown app which takes the start position from the user and on reachi
 # 3. Word Count App:
 Build a word count app which only calculates the number of characters given by the user.
 
+![word-counter](./word-count-app/word-counter.gif)
+
+[View Source](./word-count-app/)
+
 # 4. To-do App:
 Build a simple todo app which adds tasks,edit the tasks and also delete the tasks.
 
