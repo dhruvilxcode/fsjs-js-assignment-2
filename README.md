@@ -61,3 +61,7 @@ Whenever a user wants to store something in the clipboard, he enters in the text
 
 # 14. Hex Code for Selected Colour:
 When a user selects any particular colour, it shows the Hex code .
+
+![color-picker](./colors-app/color-picker.gif)
+
+[View Source](./colors-app/)
