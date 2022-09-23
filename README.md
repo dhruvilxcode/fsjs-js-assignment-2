@@ -55,5 +55,9 @@ It will calculate the monthly emi of home/car/Bike by taking the total amount, m
 # 13. Clipboard:
 Whenever a user wants to store something in the clipboard, he enters in the textbox  and on clicking on submit button, it will save in the clipboard.
 
+![copy-clipboard](./clipboard-app/copy-to-clipboard.gif)
+
+[View Source](./clipboard-app/)
+
 # 14. Hex Code for Selected Colour:
 When a user selects any particular colour, it shows the Hex code .
