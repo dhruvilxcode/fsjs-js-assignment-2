@@ -1,3 +1,11 @@
+// polyfill for trailing zero
+Number.prototype.trailingZero = function() {
+    if(this >= 0 && this <= 9) {
+        return "0" + this;
+    } 
+    return this;
+};
+
 const countingTimerTextElement = document.querySelector("#counting-timer-text");
 const minutesElement = countingTimerTextElement.querySelector(".minutes");
 const secondsElement = countingTimerTextElement.querySelector(".seconds");
@@ -16,9 +24,9 @@ let milliseconds = 00;
 let seconds = 00;
 let minutes = 00;
 
-let minutesStr = checkNumber(minutes);
-let secondsStr = checkNumber(seconds);
-let millisecondsStr = checkNumber(milliseconds);
+let minutesStr = minutes.trailingZero();
+let secondsStr = seconds.trailingZero();
+let millisecondsStr = milliseconds.trailingZero();
 
 minutesElement.innerText = minutesStr;
 secondsElement.innerText = secondsStr;
@@ -58,9 +66,9 @@ function toggleCountdown() {
                 minutes += 1;
             }
 
-            let minutesStr = checkNumber(minutes);
-            let secondsStr = checkNumber(seconds);
-            let millisecondsStr = checkNumber(milliseconds);
+            let minutesStr = minutes.trailingZero();
+            let secondsStr = seconds.trailingZero();
+            let millisecondsStr = milliseconds.trailingZero();
 
             minutesElement.innerText = minutesStr;
             secondsElement.innerText = secondsStr;
@@ -71,11 +79,4 @@ function toggleCountdown() {
         clearInterval(interval);
         isCountingStarted = false;
     }
-}
-
-function checkNumber(n) {
-    if(n <= 9) {
-        return "0" + n;
-    } 
-    return n;
 }
