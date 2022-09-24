@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Loan Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="w-2/3 mt-4 mx-auto">
+        <!-- Loan Amount Slider -->
+        <div>
+            <label class="label">
+                <span class="label-text">Loan Amount</span>
+                <span class="label-text-alt" id="loanAmountTxt">Selected Value</span>
+            </label>
+            <input type="range" min="100000" max="10000000" value="400000" step="100000" class="range"
+                id="loanAmountInput" />
+        </div>
+
+        <!-- Loan Interest -->
+        <div class="mt-4">
+            <label class="label">
+                <span class="label-text">Interest P.A.</span>
+                <span class="label-text-alt" id="interestTxt">Selected Value</span>
+            </label>
+            <input type="range" min="1" max="30" value="5" class="range" id="interestInput" />
+        </div>
+
+        <!-- Loan Duration -->
+        <div class="mt-4">
+            <label class="label">
+                <span class="label-text">Duration in Years</span>
+                <span class="label-text-alt" id="durationTxt">Selected Value</span>
+            </label>
+            <input type="range" min="1" max="30" value="5" class="range" step="1" id="durationInput" />
+            <div class="flex justify-between text-xs px-2">
+                <span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span>
+                <span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span>
+                <span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span><span>|</span>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h1 class="text-3xl text-center">
+                ₹ <span id="calculated_emi"></span>/- Per Month
+            </h1>
+        </div>
+    </div>
+
+
+    <script>
+        const loanAmountInput = document.getElementById("loanAmountInput");
+        const interestInput = document.getElementById("interestInput");
+        const durationInput = document.getElementById("durationInput");
+
+        const calculatedEMIElement = document.getElementById("calculated_emi");
+
+        const loanAmountTxt = document.getElementById("loanAmountTxt");
+        const interestTxt = document.getElementById("interestTxt");
+        const durationTxt = document.getElementById("durationTxt");
+
+        loanAmountTxt.innerText = loanAmountInput.value;
+        interestTxt.innerText = interestInput.value;
+        durationTxt.innerText = durationInput.value;
+
+        loanAmountInput.addEventListener('input', calculateEMI);
+        interestInput.addEventListener('input', calculateEMI);
+        durationInput.addEventListener('input', calculateEMI);
+
+        calculateEMI();
+
+        function calculateEMI() {
+            let loanAmount = parseInt(loanAmountInput.value);
+            let interest = parseInt(interestInput.value);
+            let duration = parseInt(durationInput.value);
+
+            // set labels
+            loanAmountTxt.innerText = loanAmount;
+            interestTxt.innerText = interest;
+            durationTxt.innerText = duration;
+
+            // calculate EMI and set it
+            // Formula: P x R x (1+R)^N / [(1+R)^N-1]
+            let monthlyInterestRate = interest / 12 / 100;
+            let top = Math.pow( 1 + monthlyInterestRate, duration * 12 );
+            let bottom = top - 1;
+            let sp = top / bottom;
+            
+            let emiPerMonth = loanAmount * monthlyInterestRate * sp;
+            
+            // add to span element and show value
+            calculatedEMIElement.innerText = Math.round(emiPerMonth);
+        }
+    </script>
+
+</body>
+
+</html>
