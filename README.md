@@ -24,43 +24,42 @@ Build a word count app which only calculates the number of characters given by t
 # 4. To-do App:
 Build a simple todo app which adds tasks,edit the tasks and also delete the tasks.
 
+![todo-app](./todo-app/todo-app.gif)
+
+[View Source](./todo-app/)
+
 # 5. Typing Game:
 On clicking on start typing the counter starts and displays the time the user takes to type.
 
-# 6.  Expense Tracker:
-Creates an Expense tracker app  in which users can track expenses incurred by them.
-
-# 7.  Drum kit :
+# 6.  Drum kit :
 Build a drum kit app in which players can make a corresponding drum noise by pressing each key.
 
-# 8. Bookmark App:
+# 7. Bookmark App:
 Create a bookmark app which helps us to store different website links using local storage. There is a section where we find all the saved bookmarks.
+**Extra: Create Chrome Extension**
 
-# 9. Random Quote Generator:
+# 8. Random Quote Generator:
 Build a Quote generator app on each refresh that gives us different quotes.
 
 ![quote-generator](./random-quote-generator/screenshot.png)
 
 [View Source](./random-quote-generator/)
 
-# 10. Budget app:
-This Web app helps users to add his/her expenses and income and calculate their available budget.
-
-# 11. Loan Calculator (Home, Car, Bike Personal):
+# 9. Loan Calculator (Home, Car, Bike Personal):
 It will calculate the monthly emi of home/car/Bike by taking the total amount, months to repay and the rate of interest.
 
 ![loan-emi](./loan-calculator/loan-emi-calculator.gif)
 
 [View Source](./loan-calculator/)
 
-# 12. Clipboard:
+# 10. Clipboard:
 Whenever a user wants to store something in the clipboard, he enters in the textbox  and on clicking on submit button, it will save in the clipboard.
 
 ![copy-clipboard](./clipboard-app/copy-to-clipboard.gif)
 
 [View Source](./clipboard-app/)
 
-# 13. Hex Code for Selected Colour:
+# 11. Hex Code for Selected Colour:
 When a user selects any particular colour, it shows the Hex code .
 
 ![color-picker](./colors-app/color-picker.gif)

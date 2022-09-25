@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Todo</h1>
+        <div class="input-box">
+            <input type="text" id="input" class="input" placeholder="Enter Todo here...">
+            <button class="btn" id="btnAddTodo">Add</button>
+        </div>
+        <ul id="todoList">
+            <li class="todo-list-item" data-index="1">
+                <input type="checkbox" checked="true">
+                <span>Task 1</span>
+                <button class="btn-danger">Remove</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

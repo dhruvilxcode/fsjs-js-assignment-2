@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+.container {
+    width: 280px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 40px 80px;
+    border-radius: 18px;
+}
+
+.input-box {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    padding: 8px 14px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 20px;
+    background-color: #2a47e8;
+    color: #fff;
+    cursor: pointer;
+    transition: 180ms;
+}
+
+.btn:hover {
+    background-color: #0f29b8;
+}
+
+#todoList {
+    margin-top: 20px;
+}
+#todoList li {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 4px;
+    transition: 180ms;
+}
+#todoList li:hover {
+    background-color: #efefef;
+}
+
+#todoList li span {
+    flex: 1;
+}
+#todoList li button {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    background-color: #cd312e;
+    color: #fff;
+    cursor: pointer;
+    transition: 180ms;
+}
+
+#todoList li button:hover {
+    background-color: #981513;
+}
