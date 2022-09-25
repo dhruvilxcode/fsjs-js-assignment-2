@@ -31,6 +31,10 @@ Build a simple todo app which adds tasks,edit the tasks and also delete the task
 # 5. Typing Game:
 On clicking on start typing the counter starts and displays the time the user takes to type.
 
+![typing-game](./typing-game/typing-game.gif)
+
+[View Source](./typing-game/)
+
 # 6.  Drum kit :
 Build a drum kit app in which players can make a corresponding drum noise by pressing each key.
 
