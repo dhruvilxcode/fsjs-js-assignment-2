@@ -1,0 +1,17 @@
+{
+    "name": "MyBookmark App",
+    "version": "1.0.0",
+    "description": "Save your bookmark with Good Interface",
+    "manifest_version": 3,
+    "author": "Dhruvil Patel",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "MyBookmarks"
+    },
+    "icons": {
+        "16": "./assets/mybookmark_16w.png",
+        "32": "./assets/mybookmark_32w.png",
+        "48": "./assets/mybookmark_48w.png",
+        "128": "./assets/mybookmark.png"
+    }
+}
