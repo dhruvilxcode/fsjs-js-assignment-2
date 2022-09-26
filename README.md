@@ -50,6 +50,16 @@ Create a bookmark app which helps us to store different website links using loca
 
 [View Source](./bookmark-app/)
 
+<details>
+    <summary>How to install Chrome Extension?</summary>
+
+1. Download the following folder [Click here](./bookmark-app/chrome-extension-src/)
+2. Open Chrome Extensions Manager [chrome://extensions/](chrome://extensions/)
+3. Turn on Developer Mode
+4. Click on Load Unpacked, and select downloaded folder.
+</details> 
+
+
 # 8. Random Quote Generator:
 Build a Quote generator app on each refresh that gives us different quotes.
 
