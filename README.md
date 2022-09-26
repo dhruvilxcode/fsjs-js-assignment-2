@@ -38,6 +38,10 @@ On clicking on start typing the counter starts and displays the time the user ta
 # 6.  Drum kit :
 Build a drum kit app in which players can make a corresponding drum noise by pressing each key.
 
+![drumkit-app](./drum-kit-app/drumkit-app.png)
+
+[View Source](./drum-kit-app/)
+
 # 7. Bookmark App:
 Create a bookmark app which helps us to store different website links using local storage. There is a section where we find all the saved bookmarks.
 **Extra: Create Chrome Extension**
