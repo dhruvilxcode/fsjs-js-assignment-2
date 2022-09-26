@@ -46,6 +46,10 @@ Build a drum kit app in which players can make a corresponding drum noise by pre
 Create a bookmark app which helps us to store different website links using local storage. There is a section where we find all the saved bookmarks.
 **Extra: Create Chrome Extension**
 
+![bookmark-app](./bookmark-app/bookmark-app.gif)
+
+[View Source](./bookmark-app/)
+
 # 8. Random Quote Generator:
 Build a Quote generator app on each refresh that gives us different quotes.
 
