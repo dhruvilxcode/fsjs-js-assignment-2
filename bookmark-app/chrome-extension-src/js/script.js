@@ -116,3 +116,13 @@ function showAlert() {
         alertWarning.classList.add("hidden");
     }, 3000);
 }
+
+
+// get current tab's URL
+getCurrentTabURL();
+function getCurrentTabURL() {
+    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+        input.value = tabs[0].url;
+        console.log(tabs[0].url);
+    });
+}

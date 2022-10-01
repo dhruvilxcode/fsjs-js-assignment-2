@@ -8,6 +8,9 @@
         "default_popup": "index.html",
         "default_title": "MyBookmarks"
     },
+    "permissions": [
+        "activeTab"
+    ],
     "icons": {
         "16": "./assets/mybookmark_16w.png",
         "32": "./assets/mybookmark_32w.png",
