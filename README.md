@@ -1,5 +1,10 @@
 JavaScript Project
 
+# FSJS JS Assignment - 1:
+[https://github.com/dhruvilxcode/fsjs-js-assignment](https://github.com/dhruvilxcode/fsjs-js-assignment)
+
+# FSJS JS Assignment - 2:
+
 # 1. Stopwatch App:
 Build a Stopwatch app which starts by pressing the button start and stop by stop button also there is a reset button.
 
